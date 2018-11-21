@@ -1,0 +1,31 @@
+{
+    "name": "postnummersok/client",
+    "description": "API client for PostnummerSök.",
+    "homepage": "https://www.postnummersok.se/",
+    "keywords": ["postnummersok"],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "PostnummerSök",
+            "email": "info@postnummersok.se",
+            "homepage": "https://www.postnummersok.se/"
+        }
+    ],
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "PostnummerSok\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PostnummerSok\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    }
+}
