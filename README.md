@@ -15,7 +15,7 @@ This is an API Client for communicating with PostnummerSök using PHP.
 Composer will now autoload Client.php when you create the class object:
 
 ```
-    $postnummersok = new \PostnummerSok\Client();
+    $postnummersok = new PostnummerSok\Client();
 ```
 
 ## Use Without Composer
@@ -25,7 +25,7 @@ Manually include Client.php in your script before initiating the client.
 ```
     require_once 'path/to/Client.php';
 
-    $postnummersok = new \PostnummerSok\Client();
+    $postnummersok = new PostnummerSok\Client();
 ```
 
 
@@ -38,7 +38,7 @@ Manually include Client.php in your script before initiating the client.
       $postnummersok = new PostnummerSok\Client();
 
       $postnummersok->setCustomerId(12345)
-                ->setApiKey('0123456789abcdef0123456789abcdef');
+                    ->setApiKey('0123456789abcdef0123456789abcdef');
 
       $request = [
         'postcode' => '11122',
