@@ -14,7 +14,7 @@
       'country_code' => 'SE',
     ];
 
-    $result = $postnummersok->Postcode($request);
+    $result = $postnummersok->Lookup($request);
 
   } catch(Exception $e) {
     die('An error occured: '. $e->getMessage() . PHP_EOL . PHP_EOL

@@ -35,9 +35,9 @@ class Client {
     return $this->_lastLog;
   }
 
-  public function Postcode(array $request) {
+  public function Lookup(array $request) {
 
-    $result = $this->_call('POST', 'https://postnummersok.se/api/postcode', $request);
+    $result = $this->_call('POST', 'https://postnummersok.se/api/lookup', $request);
 
     return $result;
   }
