@@ -45,7 +45,7 @@ Manually include Client.php in your script before initiating the client.
         'country_code' => 'SE',
       ];
 
-      $result = $postnummersok->PostCode($request);
+      $result = $postnummersok->Lookup($request);
 
     } catch(Exception $e) {
       die('An error occured: '. $e->getMessage() . PHP_EOL . PHP_EOL
